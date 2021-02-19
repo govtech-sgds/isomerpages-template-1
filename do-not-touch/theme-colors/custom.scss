@@ -1,5 +1,6 @@
 ---
 ---
+
 @charset "utf-8";
 
 // HLB brand colors
@@ -154,6 +155,8 @@ $widescreen: 1152px + (4 * $gap) !default;
   }
 }
 
+
+
 // Text color
 .has-text-primary {
   color: $primary !important;
@@ -276,47 +279,19 @@ $widescreen: 1152px + (4 * $gap) !default;
   }
 }
 
-// Navbar
-.navbar {
-  &-start {
-    .navbar-item {
-      a {
-        &.active {
-          @include touch(){
-            border-bottom:2px solid $secondary;
-          }
-        }
-      }
-    }
-  }
+// Isomer + sgds customisation
+// Sass folder in assets/css/custom-sgds
+@import "sgds-section";
+@import "sgds-container";
+@import "sgds-masthead";
+@import "sgds-navbar";
+@import "searchbar";
+@import "sgds-breadcrumb";
+@import "sgds-sec-button";
+@import "sgds-dropdown";
+@import "display-util";
+@import "typography";
 
-  .navbar-item {
-    .sub-link.is-active {
-      color:$secondary;
-    }
-
-    .selector {
-      &.active {
-        background-color:$secondary;
-      }
-    }
-    &.active {
-      @include widescreen(){
-        border-bottom:1px solid $secondary;
-      }
-    }
-  }
-  .navbar-item:hover {
-    a {
-      color:$secondary;
-    }
-    .selector {
-      @include widescreen(){
-        background-color:$secondary;
-      }
-    }
-  }
-}
 
 .datagovsg-table, .search-results-display {
   display: none;

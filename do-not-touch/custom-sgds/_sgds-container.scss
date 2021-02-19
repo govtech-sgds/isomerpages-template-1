@@ -1,0 +1,13 @@
+@mixin mediaQuery($brower-width, $width){
+    @media screen and (min-width: #{$brower-width}){
+        max-width: #{$width};
+        width: #{$width};
+    }
+}
+
+.sgds-container{
+    //Isomer container mediaQuery query
+    @include mediaQuery(1024px,960px);
+    @include mediaQuery(1280px,1216px);
+    @include mediaQuery(1408px,1280px);
+}
