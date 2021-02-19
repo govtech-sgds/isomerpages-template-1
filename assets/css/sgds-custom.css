@@ -26,6 +26,10 @@ a:hover {
     color: rgba(255, 255, 255, 0.7) !important;
 }
 
+/* Remove external link icon for masthead */
+.sgds-masthead a:after {
+    content: "";
+}
 
 /* custom background colors */
 .bg-light {
@@ -44,6 +48,9 @@ a:hover {
     background-color: #f0f4f6;
 }
 
+.sgds-dropdown {
+    display: block;
+}
 
 .sgds-dropdown-menu {
     width: 100%;
@@ -55,18 +62,18 @@ a:hover {
     visibility: visible;
 }
 
-/* .sgds-dropdown-content {
+.sgds-dropdown-content {
     padding-bottom: 1rem;
     padding-top: 1rem;
-} */
+}
 
-/* .sgds-dropdown-button {
+.sgds-dropdown-button {
     padding: 2.25rem 1.5rem;
     box-sizing: border-box;
     justify-content: space-between;
     border: 0;
     border-bottom: solid 1px #d6d6d6;
-} */
+}
 
 .sgds-button .icon,
 .sgds-button .icon.is-small,
@@ -110,11 +117,16 @@ a:hover {
     letter-spacing: 0.2px !important;
 }
 
-
+.eyebrow {
+    font-size: 16px !important;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    line-height: 22px;
+}
 
 /* Isomer Navbar custom theme */
 
-/* .navbar {
+.navbar {
     border-bottom: 1px solid #f0f0f0;
 }
 
@@ -186,7 +198,7 @@ a:hover {
 }
 .navbar-link:not(.is-arrowless):after {
     color: #6b4370;
-} */
+}
 /* Styles for the notification bar for Isomer */
 /* Changing font sizing to Isomer settings */
 
@@ -244,7 +256,20 @@ h6 center {
     color: #767676;
 }
 
-
+/* sgds-dropdown */
+.sgds-dropdown .sgds-dropdown-trigger {
+    width: 100%;
+    border: none;
+}
+.sgds-hero .sgds-dropdown-trigger {
+    display: inline;
+}
+.sgds-dropdown .sgds-dropdown-trigger button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+}
 
 .sgds-pagination-link.is-current {
     background-color: #6b4370;
@@ -329,11 +354,17 @@ h6 center {
     justify-content: flex-end;
 }
 
-
+/* sgds-overflow-button */
+.sgds-overflow-buttons .sgds-buttons {
+    flex-wrap: wrap;
+    white-space: nowrap;
+    overflow-y: visible;
+    height: 100%;
+}
 
 @media screen and (max-width: 1023px){
     .sgds-overflow-buttons .sgds-buttons {
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
     }
 
     .sgds-overflow-buttons {

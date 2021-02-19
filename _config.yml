@@ -68,6 +68,3 @@ defaults:
       layout: "page"
 
 permalink: none
-
-sass:
-  sass_dir: do-not-touch/custom-sgds
