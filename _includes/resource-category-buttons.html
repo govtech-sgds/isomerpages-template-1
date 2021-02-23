@@ -51,22 +51,21 @@
             </div>
             {%- comment -%} Display filter for desktop {%- endcomment -%}
             <div class="col is-one-quarter padding--top padding--left padding--right--sm is-hidden-touch">
-                <div class="filter-selector-div sgds-dropdown">
-                    <!-- <a class="sgds-dropdown-button hero-dropdown is-centered padding--none" aria-haspopup="true" aria-controls="hero-dropdown-menu"> -->
+                <div class="sgds-dropdown">
                     <div class="sgds-dropdown-trigger">
                         <button class="sgds-button" aria-haspopup="true" aria-controls="sgds-dropdown-menu">
-                                <span class="sgds-selector has-text-black" id="sgds-selector-text-desktop">Recent</span>
-                                <span class="icon">
-                                    <span class="sgds-icon sgds-icon-chevron-down is-size-4 has-text-black" id="filter-arrow"></span>
-                                </span>
+                            <p id="sgds-selector-text-desktop">Recent</p>
+                            <span class="icon">
+                                <span class="sgds-icon sgds-icon-chevron-down is-size-4"></span>
+                            </span>
                         </button>
                     </div>
-                    <div class="sgds-dropdown-menu has-text-left" id="hero-dropdown-menu" role="menu" >
-                      <div id="year-filter-desktop" class="sgds-dropdown-content is-centered">
-                        <a class="sgds-dropdown-item padding--top--sm padding--bottom--none" id="apply-filter-recent">
-                            <p>Recent</p>
-                        </a>
-                      </div>
+                    <div class="sgds-dropdown-menu is-fullwidth" id="hero-dropdown-menu" role="menu">
+                        <div id="year-filter-desktop" class="sgds-dropdown-content">
+                            <a href="#" class="sgds-dropdown-item padding--top--sm padding--bottom--none" id="apply-filter-recent">
+                                <p>Recent</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

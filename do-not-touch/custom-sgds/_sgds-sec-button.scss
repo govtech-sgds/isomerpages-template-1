@@ -1,0 +1,29 @@
+.sgds-overflow-buttons{
+
+    .sgds-buttons{
+        flex-wrap: wrap;
+        white-space: nowrap;
+        overflow-y: visible;
+        height: 100%;
+
+        @media screen and (max-width: 1023px){
+            flex-wrap: nowrap;
+        }
+    }
+
+    .sgds-sec-button{
+        display: inline-block;
+        .media-category-button{
+            margin-right: 2.5rem;
+            letter-spacing: .5px;
+            line-height: 34px;
+            color:#323232;
+            
+            &.selected,
+            &:hover{
+                color:$primary;
+                border-bottom: 2px solid $primary;
+            }
+        }
+    }
+}
