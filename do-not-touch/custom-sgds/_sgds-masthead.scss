@@ -1,0 +1,10 @@
+//masthead
+.sgds-masthead{
+    /* Remove external link icon for masthead */
+    a:after{
+        content: "";
+    }
+    .is-text{
+        font-size: 12px;
+    }
+}
