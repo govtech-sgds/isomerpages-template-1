@@ -280,7 +280,8 @@ $widescreen: 1152px + (4 * $gap) !default;
 }
 
 // Isomer + sgds customisation
-// Sass folder in assets/css/custom-sgds
+// Sass folder in do-not-touch/custom-sgds
+@import "isomer-typography";
 @import "sgds-section";
 @import "sgds-container";
 @import "sgds-masthead";
@@ -288,8 +289,7 @@ $widescreen: 1152px + (4 * $gap) !default;
 @import "sgds-breadcrumb";
 @import "sgds-sec-button";
 @import "sgds-dropdown";
-@import "display-util";
-@import "typography";
+
 
 
 .datagovsg-table, .search-results-display {
