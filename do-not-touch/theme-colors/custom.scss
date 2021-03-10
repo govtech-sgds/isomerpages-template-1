@@ -280,15 +280,15 @@ $widescreen: 1152px + (4 * $gap) !default;
 }
 
 // Isomer + sgds customisation
-// Sass folder in do-not-touch/custom-sgds
-@import "isomer-typography";
-@import "sgds-section";
-@import "sgds-container";
-@import "sgds-masthead";
-@import "sgds-navbar";
-@import "sgds-breadcrumb";
-@import "sgds-sec-button";
-@import "sgds-dropdown";
+// Sass folder in _sass
+@import "./_sass/isomer-typography";
+@import "./_sass/sgds-section";
+@import "./_sass/sgds-container";
+@import "./_sass/sgds-masthead";
+@import "./_sass/sgds-navbar";
+@import "./_sass/sgds-breadcrumb";
+@import "./_sass/sgds-sec-button";
+@import "./_sass/sgds-dropdown";
 
 
 
