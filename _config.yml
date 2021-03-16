@@ -68,5 +68,3 @@ defaults:
       layout: "page"
 
 permalink: none
-sass:
-  sass_dir: _sass
