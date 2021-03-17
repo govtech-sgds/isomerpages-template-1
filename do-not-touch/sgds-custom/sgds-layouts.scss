@@ -1,0 +1,22 @@
+//SGDS Section
+.sgds-section{
+    &-pagetitle{
+        padding: 1.5rem 1.5rem 2.25rem;
+        background-color: $primary;
+    }
+  }
+  //SGDS Container
+  @mixin mediaQuery($brower-width, $width){
+    @media screen and (min-width: #{$brower-width}){
+        max-width: #{$width};
+        width: #{$width};
+    }
+  }
+
+  .sgds-container{
+    //Isomer container mediaQuery query
+    @include mediaQuery(1024px,960px);
+    @include mediaQuery(1280px,1216px);
+    @include mediaQuery(1408px,1280px);
+  }
+  
