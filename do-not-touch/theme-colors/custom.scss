@@ -279,6 +279,7 @@ $widescreen: 1152px + (4 * $gap) !default;
   }
 }
 
+@import 'main';
 
 .datagovsg-table, .search-results-display {
   display: none;
