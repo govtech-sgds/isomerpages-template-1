@@ -514,8 +514,6 @@ html.has-navbar-fixed-top-widescreen {
 
 
 //Media Queries
-
-
 @media screen and (max-width:1279px){
 	.sgds-navbar>.sgds-container {
 		display: block;
@@ -623,10 +621,28 @@ html.has-navbar-fixed-top-widescreen {
   a{
       font-size: .9375rem;
       padding: 0.625rem .9375rem;
+      color: #fff;
+      &:hover{
+        color: #d6d6d6;
+      }
       small{
           font-size: .9375rem;
           letter-spacing: .2px;
       }
+  }
+}
+
+.is-inverted{
+  .sgds-breadcrumb{
+    a{
+      color: #767676;
+      &:hover{
+        color: #484848;
+      }
+    }
+    li + li::before {
+      color: #767676;
+    }
   }
 }
 

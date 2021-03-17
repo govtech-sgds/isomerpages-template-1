@@ -223,26 +223,8 @@ h6 center {
 .sgds-section.is-small.sgds-section-pagetitle {
     padding-bottom: 2.25rem;
 }
-/* breadcrumbs */
-.sgds-breadcrumb {
-    margin-bottom: 0.625rem;
-}
-.sgds-breadcrumb a {
-    padding: 0.5em 0.75em;
-    color: white;
-}
-.sgds-breadcrumb a:hover {
-    color: #d6d6d6;
-}
-.is-inverted .sgds-breadcrumb a {
-    color: #767676;
-}
-.is-inverted .sgds-breadcrumb a:hover {
-    color: #484848;
-}
-.is-inverted .sgds-breadcrumb li + li::before {
-    color: #767676;
-}
+
+
 
 
 
